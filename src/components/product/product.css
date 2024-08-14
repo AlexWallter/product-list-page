@@ -1,0 +1,28 @@
+.product {
+    display: grid;
+    justify-content: left;
+    position: relative;
+    row-gap: 2em;
+}
+
+.product--img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product--img:hover {
+    outline: .15em solid var(--primary-clr);
+}
+
+.product__info {
+    display: grid;
+    row-gap: .3em;
+}
+
+.product__info--sh-name {
+    color: var(--brown);
+}
+
+.product__info--price {
+    color: var(--primary-clr);
+}

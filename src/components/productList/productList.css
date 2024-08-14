@@ -1,0 +1,19 @@
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+    row-gap: 1em;
+    column-gap: 1em;
+    margin-top: 1.7em;
+}
+
+@media (min-width: 43.75em) {
+    .products-container {
+    grid-template-columns: repeat(1, minmax(14em, .87fr));
+    }  
+}
+
+@media (min-width: 62.5em) {
+    .products-container {
+    grid-template-columns: repeat(3, .5fr);
+    }
+}

@@ -1,0 +1,33 @@
+.cart__order > * {
+    margin: .5em 0;
+}
+
+.order__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid hsla(14, 25%, 72%, .25);
+}
+
+.order__item--costs {
+    display: flex;
+    column-gap: .5em;
+    padding: .3em 0;
+}
+
+.order__item--quantity {color: var(--primary-clr);}
+
+.order__item--unit-price{color: var(--lighter-brown-1);}
+
+.order__item--total-price{color: var(--lighter-brown-2);}
+
+.order--total-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order__item--discart:hover {
+    cursor: pointer;
+    color: hsl(0, 81%, 51%);
+}

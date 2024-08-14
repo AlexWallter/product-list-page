@@ -1,0 +1,40 @@
+.product-page-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding:2em;
+}
+
+@media (min-width: 43.75em) {
+    .product-page-container {
+        grid-template-areas: 
+        'name . cart cart'
+        'products products cart cart'
+        'products products . . '
+        'products products . . ';
+        padding-inline: 1em;
+        column-gap: 1em;
+        justify-content: space-around;
+
+    }
+
+    .product-type {
+        grid-area: name;
+    }
+
+    .cart {
+        grid-area: cart;
+    }
+
+    .products-container {
+        grid-area: products;
+        row-gap: 2.5em;
+    }
+}
+
+@media (min-width: 62em) {
+    .product-page-container {
+        padding-top: 5em;
+        padding-inline: 3em;
+    }
+}

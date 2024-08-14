@@ -1,0 +1,32 @@
+.cart {
+    display: grid;
+    background-color: var(--whiteish-clr);
+    padding-inline: .6em;
+    margin: 1em 0;
+    border-radius: 8px;
+    max-width: minmax(22rem, 1fr);
+}
+
+.cart > * {
+    margin: .5em 0;
+}
+
+.cart__empty {
+    margin: 2em auto;
+    display: grid;
+    justify-items: center;
+    color: var(--lighter-brown-2);
+}
+
+.cart__header {
+    color: var(--primary-clr);
+}
+
+.cart__order--carbon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5em;
+    background-color: var(--bg-clr);
+    padding: 1em 0;
+}

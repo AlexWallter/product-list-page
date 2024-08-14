@@ -1,0 +1,47 @@
+.modal:not([open]) {
+    display: none;
+    opacity: 0;
+    scale: .8;
+    transition: 1s;
+}
+
+.modal {
+    display: grid;
+    justify-content: center;
+    outline: transparent;
+    background-color: var(--whiteish-clr);
+    border: none;
+    border-radius: 1em;
+    width: clamp(20rem, 90vw, 40rem);
+    padding: .7em 1.7em;
+    opacity: 1;
+    scale: 1;
+    row-gap: 1em;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-x: hidden;
+}
+
+.modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal > * {
+    width: clamp(15rem, 80vw, 35rem);
+}
+
+.modal__header > svg {
+    font-size: 2rem;
+    fill: var(--valid-clr);
+}
+
+.final-order {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding: 1em;
+}
+
+.modal--order-total {
+    color: var(--darker-brown);
+}

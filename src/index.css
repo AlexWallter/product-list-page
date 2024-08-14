@@ -1,0 +1,111 @@
+:root {
+    --primary-clr: hsl(14, 86%, 42%);
+    --primary-darker-clr: hsl(14, 86%, 36%);
+    --valid-clr: hsl(159, 69%, 38%);
+    --whiteish-clr:hsl(20, 50%, 98%);
+    --bg-clr:hsl(13, 31%, 94%);
+    --brown: hsl(12, 20%, 44%);
+    --lighter-brown-1:hsla(14, 25%, 72%);
+    --lighter-brown-2:hsl(7, 20%, 60%);
+    --darker-brown: hsl(14, 65%, 9%);
+
+    --thin-font-wg: 300;
+    --main-font-wg: 400;
+    --semi-bold-font-wg: 600;
+    --bold-font-wg: 700;
+
+    --sm-font-sz: .875rem;
+    --normal-font-sz: 1rem;
+    --big-font-sz: 1.3rem;
+    --bigger-font-sz: 1.7rem;
+}
+
+body {
+    font-family: 'Red hat text', sans-serif;
+    font-weight: var(--main-font-wg);
+    background-color: var(--bg-clr);
+}
+
+/*RESET*/
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Utility Classes*/
+
+.sm-font-sz {
+    font-size: var(--sm-font-sz);
+}
+
+.big-font-sz  {
+    font-size: var(--big-font-sz);
+}
+
+.bigger-font-sz  {
+    font-size: var(--bigger-font-sz);
+}
+
+.thin-font {
+    font-weight: var(--thin-font-wg);
+}
+
+.semi-bold-font {
+    font-weight: var(--semi-bold-font-wg);
+}
+
+.bold-font {
+    font-weight: var(--bold-font-wg);
+}
+
+.u-order-btn {
+    text-align: center;
+    border-radius: 2em;
+    padding: .5em;
+    color: var(--whiteish-clr);
+    background-color: var(--primary-clr);
+    font-weight: var(--semi-bold-font-wg);
+    transition: .2s;
+}
+
+.u-order-btn:hover {
+    background-color: var(--primary-darker-clr);
+    transform: scale(1.02);
+    box-shadow:2px 4px 5px 0px rgba(0,0,0,0.36);
+}
+
+.u-order-btn:active {
+    transform: scale(1);
+    box-shadow:1px 1px 1px 0px rgba(0,0,0,0.36);
+}
